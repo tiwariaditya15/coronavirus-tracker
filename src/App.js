@@ -18,15 +18,17 @@ class App extends Component {
 }
       render(){
         return (
-          <div className = "container">
+          <div className = "" align = "center">
               <img src={covidImage} alt="corona" class="circle responsive-img"/>
-              <Global />
-              <div class = "container">
-               <h5>
-                Country:<Dropdown options = {this.state.countries} value = {this.state.selectedCountry} onChange = {this.handleChange} placeholder = "Select"/>
-              </h5>
+              <div className = "container">
+                  <Global />
+                  <div class = "container">
+                  <h5>
+                    Country:<Dropdown options = {this.state.countries} value = {this.state.selectedCountry} onChange = {this.handleChange} placeholder = "Select"/>
+                  </h5>
+                  </div>
+                  <Selector country = {this.state.selectedCountry}/>
               </div>
-              <Selector country = {this.state.selectedCountry}/>
           </div>
         );
       }

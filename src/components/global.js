@@ -23,7 +23,7 @@ class Global extends Component{
                 globalDeaths,
                 globalRecovered
             });
-            //console.log(res);
+            // console.log(res);
             //const { confirmed, deaths } = res.data;
             //console.log('Confirmed:' +  + ' & Deaths:' + res.data.deaths.value + res.data.recovered.value);
         });
@@ -37,8 +37,8 @@ class Global extends Component{
                             <div className = "card-content white-text">
                                         <p className = "center card-title">Globally</p>
                                         <h5>Active Cases: {this.state.globalCases}</h5>
-                                        <h5>Recoveries: {this.state.globalDeaths}</h5>
-                                        <h5>Deaths: {this.state.globalRecovered}</h5>
+                                        <h5>Recoveries: {this.state.globalRecovered}</h5>
+                                        <h5>Deaths: {this.state.globalDeaths}</h5>
                             </div>
                         </div>
                     </div>

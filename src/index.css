@@ -14,9 +14,6 @@ code {
 
 img{
   overflow: hidden;
-  width: 200px;
-  height: 200px;
-  left: 200000px;
   animation: rotation 5s infinite linear;
 }
 
