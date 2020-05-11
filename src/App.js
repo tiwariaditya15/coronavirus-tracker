@@ -19,7 +19,7 @@ class App extends Component {
       render(){
         return (
           <div className = "container">
-              <img src={covidImage} alt="" class="circle responsive-img"/>
+              <img src={covidImage} alt="corona" class="circle responsive-img"/>
               <Global />
               <div class = "container">
                <h5>
