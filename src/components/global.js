@@ -37,8 +37,8 @@ class Global extends Component{
                             <div className = "card-content white-text">
                                         <p className = "center card-title">Globally</p>
                                         <h5>Active Cases: {this.state.globalCases}</h5>
-                                        <h5>Recoveries: {this.state.globalCases}</h5>
-                                        <h5>Deaths: {this.state.globalCases}</h5>
+                                        <h5>Recoveries: {this.state.globalDeaths}</h5>
+                                        <h5>Deaths: {this.state.globalRecovered}</h5>
                             </div>
                         </div>
                     </div>

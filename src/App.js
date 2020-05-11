@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Dropdown from 'react-dropdown';
 import Global from './components/global';
 import Selector from './components/selector';
+import covidImage from './covid.svg';
 class App extends Component {
    state = {
     selectedCountry: null,
@@ -17,7 +18,8 @@ class App extends Component {
 }
       render(){
         return (
-          <div className = "container row">
+          <div className = "container">
+              <img src={covidImage} alt="" class="circle responsive-img"/>
               <Global />
               <div class = "container">
                <h5>
