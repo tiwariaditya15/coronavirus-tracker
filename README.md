@@ -10,6 +10,4 @@ Used react-dropdown npm package - https://www.npmjs.com/package/react-dropdown
 ### CSS Framework
 Used Materialize framework to style - https://materializecss.com/getting-started.html
 ### Link to App
-```
 https://covid19-voldemort.netlify.app/
-```
