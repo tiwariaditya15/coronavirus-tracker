@@ -7,3 +7,5 @@ PS: My first react app.
 API used to get data - https://covid19.mathdro.id
 ### NPM package
 Used react-dropdown npm package - https://www.npmjs.com/package/react-dropdown
+### CSS Framework
+Used Materialize framework to style - https://materializecss.com/getting-started.html
