@@ -2,12 +2,35 @@ import React, {Component} from 'react';
 import Dropdown from 'react-dropdown';
 import Global from './components/global';
 import Selector from './components/selector';
+import axios from 'axios';
 import covidImage from './covid.svg';
 class App extends Component {
    state = {
     selectedCountry: null,
-    countries: [ 'India', 'USA', 'United Kingdom', 'China', 'Italy', 'Spain', 'Germany', 'Japan', 
-    'Israel', 'Iran', 'South Korea', 'Australia', 'Russia']
+    countries: ['Global']
+   }
+
+   componentDidMount(){
+          try{
+                axios.get('https://restcountries.eu/rest/v2/all')
+                .then( res => {
+
+                  const fetchedCountries = res.data.map( country => {
+                      return country.name;
+                  });
+                  
+                  const countries = [...fetchedCountries];
+                  
+                  this.setState({
+                    countries: countries
+                  });
+                  //console.log(fetchedountries);
+                
+                });
+
+          }catch(err){
+                console.log('Logging from catch:' + err.response);
+          } 
    }
 
    handleChange = (e) => {
@@ -19,7 +42,7 @@ class App extends Component {
       render(){
         return (
           <div className = "" align = "center">
-              <img src={covidImage} alt="corona" class="circle responsive-img"/>
+              <img src={covidImage} alt="corona" class="circle responsive-img rotate"/>
               <div className = "container">
                   <Global />
                   <div class = "container">

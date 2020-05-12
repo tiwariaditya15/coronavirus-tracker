@@ -12,12 +12,20 @@ code {
     monospace;
 }
 
-img{
+img.rotate{
   overflow: hidden;
   width: 300px;
   animation: rotation 5s infinite linear;
 }
 
+div.Dropdown-placeholder{
+      background-color: grey;
+}
+div.Dropdown-menu{
+  background-color: grey;
+  opacity: 0.6;
+  overflow: hidden;
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);

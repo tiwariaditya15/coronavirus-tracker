@@ -9,9 +9,6 @@ class Global extends Component{
         
     }
   
-  
-    
-
     componentDidMount(){
         axios.get('https://covid19.mathdro.id/api')
         .then(res => {
